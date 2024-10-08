@@ -1,16 +1,8 @@
 # dotfiles
 
-## Notes
-
-- fonts from pop-os fonts
-  - [pop-os fonts](https://github.com/pop-os/fonts)
-  - [font-setup](https://shkspr.mobi/blog/2020/05/configuring-pop_os/)
-
-- vim, zsh and tmux all work with WSL2 as long as their packages are installed.
-
 ## Applications
 
-**Linux and MacOS**
+**Linux and MacOS only **
 
 **OhMyZSH**
 
@@ -26,7 +18,6 @@
 
     $ brew install antigen //macos
 
-
 Keep home folder clean by using ".* when downloading antigen. 
 
     $ antigen init ~/.antigen.zsh
@@ -37,30 +28,27 @@ Keep home folder clean by using ".* when downloading antigen.
 
 **Neovim**
 
+_Might be outdated on some systems to use lua and plugins_
+
     $ brew install neovim //macos
     $ sudo apt/dnf/yum install neovim //debian/ubuntu, fedora, rhel
 
-Using vim plug, for now.
-
-[vim plug](https://github.com/junegunn/vim-plug)
-
-Set files in: 
-
-    ~/.config/nvim
-
-    cp nvim ~/.config/nvim  #assuming the directory was created. Do the same for the rest
-
 **Tmux**
 
-This is not built-in to the system, so it must be installed.
+_This is not built-in to the system, so it must be installed._
 
     $ brew install tmux //macos
     $ sudo apt/dnf/yum install tmux //debian/ubuntu, fedora, rhel
 
-[Tmux Github](https://github.com/tmux/tmux/wiki)
+**Neovim Plugins**
 
-- Added mouse scroll ability to config file
+- Discord Rich Presence $\rightarrow$ used for client and Emp. status in Discord.
 
-### Neovim Plugins
+## Notes
+- fonts from pop-os fonts
+  - [pop-os fonts](https://github.com/pop-os/fonts)
+  - [font-setup](https://shkspr.mobi/blog/2020/05/configuring-pop_os/)
 
-- Discord Rich Presence $\rightarrow$ used for client and Emp. status in Discord. 
+- vim, zsh and tmux all work with WSL2 as long as their packages are installed.
+
+## MacOS specific
