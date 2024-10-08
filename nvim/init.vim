@@ -7,6 +7,7 @@ call plug#begin()
     Plug 'mhinz/vim-startify'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'lervag/vimtex'
+    Plug 'andweeb/presence.nvim'
 call plug#end()
 
 set nocompatible            " disable compatibility to old-time vi
@@ -73,8 +74,3 @@ let g:presence_show_time           = 0 " change to 1 to enable time tracking
 " Let g:presence_reading_text        = " Reading %s"
 " Let g:presence_workspace_text      = " Working on %s"
 " Let g:presence_line_number_text    = " Line %s out of %s"
-
-"Latex"
-let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<s-tab>' 

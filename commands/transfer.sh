@@ -4,8 +4,10 @@
 
 # sudo is not needed if you have permission to write to the destination
 # sudo rsync -avhL --progress --delete [path-to-source] [path-to-USB]
+
 sudo rsync --dry-run -avhL --progress --delete [path-to-source] [path-to-USB]
 # probably best not to use --delete files that may not have been backed up 
+
 # -n, --dry-run               perform a trial run with no changes made
 # -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
 
