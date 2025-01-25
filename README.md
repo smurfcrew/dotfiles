@@ -48,7 +48,5 @@ _This is not built-in to the system, so it must be installed._
 - fonts from pop-os fonts
   - [pop-os fonts](https://github.com/pop-os/fonts)
   - [font-setup](https://shkspr.mobi/blog/2020/05/configuring-pop_os/)
-
+- Including `anaconda` in path may cause conflicts with neovim packages. 
 - vim, zsh and tmux all work with WSL2 as long as their packages are installed.
-
-## MacOS specific
