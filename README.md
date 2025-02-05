@@ -4,7 +4,7 @@
 
 **Linux and MacOS only **
 
-**OhMyZSH**
+## OhMyZSH
 
     $ brew search zsh //will list available zsh packages
     $ brew install zsh // macos
@@ -14,7 +14,7 @@
 
 [install antigen](https://github.com/zsh-users/antigen)
 
-**Antigen**
+## Antigen
 
     $ brew install antigen //macos
 
@@ -26,23 +26,25 @@ Keep home folder clean by using ".* when downloading antigen.
 
 [Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-**Neovim**
+## Neovim
+
+**Install pynvim otherwise there will be issues with utilsnips**
 
 _Might be outdated on some systems to use lua and plugins_
 
     $ brew install neovim //macos
     $ sudo apt/dnf/yum install neovim //debian/ubuntu, fedora, rhel
 
-**Tmux**
+### Neovim Plugins
+
+- Discord Rich Presence $\rightarrow$ used for client and Emp. status in Discord.
+
+## Tmux
 
 _This is not built-in to the system, so it must be installed._
 
     $ brew install tmux //macos
     $ sudo apt/dnf/yum install tmux //debian/ubuntu, fedora, rhel
-
-**Neovim Plugins**
-
-- Discord Rich Presence $\rightarrow$ used for client and Emp. status in Discord.
 
 ## Notes
 - fonts from pop-os fonts
