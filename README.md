@@ -2,7 +2,7 @@
 
 ## Applications
 
-**Linux and MacOS only **
+**Linux and MacOS only**
 
 ## OhMyZSH
 
