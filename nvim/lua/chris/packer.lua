@@ -20,7 +20,6 @@ return require('packer').startup(function(use)
   	})
     use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) -- using plug
     use ('nvim-treesitter/playground') -- archived
-    use ('lervag/vimtex')
     use ('SirVer/ultisnips')
     use ('theprimeagen/harpoon')
     use ('mbbill/undotree')
@@ -29,6 +28,6 @@ return require('packer').startup(function(use)
     use({'neovim/nvim-lspconfig'})
     use({'hrsh7th/nvim-cmp'})
     use({'hrsh7th/cmp-nvim-lsp'})
-    -- discord rich presence
-
+    use ('lervag/vimtex')
+    use({'andweeb/presence.nvim'})    -- discord rich presence
 end)
