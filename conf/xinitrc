@@ -1,7 +1,0 @@
-# place in home folder as .xinitrc
-
-xrandr --setprovideroutputsource modesetting NVIDIA-0
-xrandr --auto
-
-
-# xrandr --dpi 96

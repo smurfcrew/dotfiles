@@ -104,24 +104,6 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=nvim # set editor to nvim
 source ~/.antigen.zsh  # Comment this line if you are using MacOS and using brew to install antigen
 
-# ---  NVIDIA CUDA Toolkit ---
-# NEEDED FOR LINUX CUDA on specific machines
-# Uncomment if you are using CUDA on Linux
-# Make sure the driver version matches the CUDA version
-# export PATH=/usr/local/cuda-12.3/bin${PATH:+:${PATH}}
-# export LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64\
-#                          ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-
-# ---------  START MACOS ONLY ---------
-# $ brew install antigen zsh-git-prompt zsh-autosuggestions zsh fast-syntax-highlighting zsh-syntax-highlighting zsh-auto-complete
-# If using MacOS and using brew to install antigen and autosuggetionsuncomment both lines below 
-#source "/opt/homebrew/share/antigen/antigen.zsh"
-#source "/opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
-#source "/opt/homebrew/opt/zsh-git-prompt/zshrc.sh"
-#source "/opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
-#source "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-# --------- END MACOS ONLY ---------
-
 # ---------  START LINUX ONLY ---------
 # Load the oh-my-zsh's library.
  antigen use oh-my-zsh
@@ -139,6 +121,16 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 # ---------  END LINUX ONLY ---------
 
+# ---------  START MACOS ONLY ---------
+# $ brew install antigen zsh-git-prompt zsh-autosuggestions zsh fast-syntax-highlighting zsh-syntax-highlighting zsh-auto-complete
+# If using MacOS and using brew to install antigen and autosuggetionsuncomment both lines below 
+#source "/opt/homebrew/share/antigen/antigen.zsh"
+#source "/opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
+#source "/opt/homebrew/opt/zsh-git-prompt/zshrc.sh"
+#source "/opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
+#source "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+# --------- END MACOS ONLY ---------
+
 # ---------  START COMMON ---------
 # nvm = node version manager for nodejs -> neovim COC
 export NVM_DIR="$HOME/.nvm"
@@ -149,8 +141,25 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$PATH:/usr/local/go/bin
 
 # ANACONDA
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/$USER/Applications/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/$USER/Applications/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/$USER/Applications/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/$USER/Applications/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-#export SDKMAN_DIR="$HOME/.sdkman"
-#[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-# ---------  END COMMON ---------
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+ ---------  END COMMON ---------
+
+# RVM for Ruby
+source "/etc/profile.d/rvm.sh"

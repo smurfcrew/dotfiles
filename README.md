@@ -2,9 +2,9 @@
 
 ## Applications
 
-**Linux and MacOS only**
+**Linux and MacOS only dotfiles**
 
-## OhMyZSH
+## ZSH and OhMyZSH 
 
     $ brew search zsh //will list available zsh packages
     $ brew install zsh // macos
@@ -30,18 +30,21 @@ Keep home folder clean by using ".* when downloading antigen.
 
 **Install pynvim otherwise there will be issues with utilsnips**
 
+```bash
+$ pip install pynvim
+```
+
 _Might be outdated on some systems to use lua and plugins_
 
     $ brew install neovim //macos
     $ sudo apt/dnf/yum install neovim //debian/ubuntu, fedora, rhel
 
-### Neovim Plugins
-
-- Discord Rich Presence $\rightarrow$ used for client and Emp. status in Discord.
+### Nevim Plugins
+- Check `packer.lua` for plugins
 
 ## Tmux
 
-_This is not built-in to the system, so it must be installed._
+**This is not built-in to the system, and needs to be installed.**
 
     $ brew install tmux //macos
     $ sudo apt/dnf/yum install tmux //debian/ubuntu, fedora, rhel
