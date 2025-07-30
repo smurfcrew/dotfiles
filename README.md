@@ -39,7 +39,7 @@ _Might be outdated on some systems to use lua and plugins_
     $ brew install neovim //macos
     $ sudo apt/dnf/yum install neovim //debian/ubuntu, fedora, rhel
 
-### Nevim Plugins
+### Neovim Plugins
 - Check `packer.lua` for plugins
 
 ## Tmux
