@@ -43,6 +43,13 @@
     "files.autoSaveDelay": 1000,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
+    // c/c++
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.autocomplete": "Default", 
+    "C_Cpp.formatting": "Default", 
+    "C_Cpp.clang_format_fallbackStyle": "file",
+    "makefile.configureOnOpen": true,
     // python
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.diagnosticMode": "workspace",
@@ -59,13 +66,7 @@
     "python.linting.flake8Args": [
         "--max-line-length=88"
     ],
-    // c/c++
-    "C_Cpp.errorSquiggles": "Enabled",
-    "C_Cpp.intelliSenseEngine": "Default",
-    "C_Cpp.autocomplete": "Default", 
-    "C_Cpp.formatting": "Default", 
-    "C_Cpp.clang_format_fallbackStyle": "file",
-    "makefile.configureOnOpen": true,
+    // Font settings
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     // discord presence for employers/contracts
@@ -73,5 +74,8 @@
     "discord.largeImageIdling": "",
     "discord.removeDetails": true,
     "discord.removeTimestamp": true,
+    //"discord.lowerDetailsEditing": {workspace}  // Default Settings
     "discord.lowerDetailsEditing": "Workspace: Work"
+    //"discord.lowerDetailsEditing": "Workspace: GA"
+    //"discord.lowerDetailsEditing": "Workspace: Personal"
 }
